@@ -1,3 +1,60 @@
 body {
-  background-color: darkgoldenrod;
+  background-color: lightgrey;
+}
+.red {
+  color: red;
+}
+.text-align {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-family: "Comic Sans MS";
+}
+
+p {
+  color: black;
+}
+
+p#specjalny {
+  background-color: yellow;
+  color: green;
+}
+
+p.wprowadzenie {
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 30px;
+  font-size: 150%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+tr {
+  background-color: grey;
+}
+code {
+  border: 1px solid red;
+  display: block;
+}
+.podkreslenie {
+  text-decoration: none;
+}
+.obrazek {
+  float: right;
+}
+iframe {
+  border: none;
 }
