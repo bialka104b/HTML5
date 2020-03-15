@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marta Jamróz Kulig</title>
+    <meta keywords>
+    <meta name="keywords" content="HTML,CSS,Webakademia">
+    <meta name="author" content="Marta Jamróz Kulig">
+    <meta name="description" content="Opis">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="GET" enctype="multipart/form-data">
+
+        <fieldset name="dane osobowe">
+            <input name="Imię" placeholder="Wpisz Imię" value="" maxlength="20" pattern="[a-zA-Z]" />
+            <input name="Nazwisko" placeholder="Wpisz Nazwisko" value="" maxlength="20">
+            <input name="Wzrost" type="number" min="50" max="300" placeholder="Wpisz wzrost w cm" value="">
+            <input type="date" name="Data" placeholder="1.01.2020r">
+            <select name="Płeć">
+                <option>Kobieta</option>
+                <option>Mężczyzna</option>
+            </select>
+            <input type="text" name="Ulica" placeholder="Wpisz ulicę" maxlength="20" value="">
+            <input type="number" maxlength="6" name="kod pocztowy" placeholder="Wpisz kod pocztowy">
+            <input type="text" name="Miejscowość" maxlength="100" placeholder="Wpisz miejscowość">
+            <select name="Województwo">
+                <option value="Łódzkie">Łódzkie</option>
+                <option value="Podkarpackie" selected>Podkarpackie</option>
+                <option value="Wielkopolskie">Wielkopolskie</option>
+                <option value="Małopolskie">Małopolskie</option>
+                <option value="Dolnośląskie">Dolnośląskie</option>
+            </select>
+        </fieldset>
+        <input type="text" name="login" maxlength="20" placeholder="login" value="">
+        <input type="password" name="Hasło" placeholder="hasło" value="" required>
+        <label name="zainteresowania[]">
+            <label for="sanguine1">książka</label>
+            <input name="zainteresowania[]" type="checkbox" id="sanguine1" value="0">
+        </label>
+        <label name="zainteresowania">
+            <label for="sanguine2">sport</label>
+            <input name="zainteresowania[]" type="checkbox" id="sanguine2" value="0">
+        </label>
+        <label name="zainteresowania">
+            <label for="sanguine3">podróże</label>
+            <input name="zainteresowania[]" type="checkbox" id="sanguine3" value="0">
+        </label>
+
+        <input type="file" name="zdjecie">
+        <input type="range" name="Zarobki" min="1000" max="10000" step="100">
+
+
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+
+</html>
